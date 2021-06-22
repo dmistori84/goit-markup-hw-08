@@ -1,0 +1,104 @@
+.card__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--other-color);
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: var(--td);
+  transition-timing-function: var(--tf);
+}
+
+.cards__portfolio-link:hover .overlay,
+.cards__portfolio-link:focus .overlay {
+  transform: translateY(0%);
+}
+.portfolio__cards {
+  padding-top: 94px;
+}
+.portfolio__list {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+.portfolio__list-item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.cards__item {
+  flex-basis: calc((100% - 90) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card__description {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.nav-btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background: #f5f4fa;
+  border-color: transparent;
+  border-radius: 4px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: var(--td);
+  transition-timing-function: var(--tf);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--other-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.cards__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.cards__relation {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--under-color);
+}

@@ -1,0 +1,44 @@
+.clients {
+  padding-top: 94px;
+}
+.company {
+  display: flex;
+}
+.clients__title {
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.company__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icon-color);
+  transition-property: fill, border-color;
+  transition-duration: var(--td);
+  transition-timing-function: var(--tf);
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+.company__item {
+  transition-property: border-color;
+  transition-duration: var(--td);
+  transition-timing-function: var(--tf);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
