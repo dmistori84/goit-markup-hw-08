@@ -599,8 +599,11 @@ body {
   }
 }
 
-.features__item {
-  width: 100%;
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 60px;
 }
 
 .features__item:not(:last-child) {
@@ -709,6 +712,7 @@ body {
 }
 
 .team__item {
+  width: 100%;
   max-width: 450px;
   display: flex;
   flex-wrap: wrap;
@@ -1032,6 +1036,9 @@ footer .logo__second-name {
 }
 
 @media screen and (min-width: 1200px) {
+  .subscription__title {
+    text-align: left;
+  }
   .subscription__form-footer {
     display: flex;
     flex-direction: row;
@@ -1044,6 +1051,21 @@ footer .logo__second-name {
     height: 50px;
     margin-top: 0;
   }
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.portfolio__list-item {
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .card__wrapper {
@@ -1074,38 +1096,18 @@ footer .logo__second-name {
   transform: translateY(0%);
 }
 
-.portfolio__cards {
-  padding-top: 94px;
-}
-
-.portfolio__list {
+.cards__list {
+  margin-top: -30px;
+  margin-left: -30px;
   justify-content: center;
   display: flex;
-  margin-bottom: 50px;
-}
-
-.portfolio__list-item {
-  margin-right: 8px;
-}
-
-.portfolio__list-item:last-child {
-  margin-right: 0;
-}
-
-.cards__list {
-  display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  align-items: flex-start;
 }
 
 .cards__item {
-  flex-basis: calc((100% - 90) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.cards__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .cards__item:focus, .cards__item:hover {
@@ -1155,5 +1157,38 @@ footer .logo__second-name {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--under-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    justify-content: center;
+    display: flex;
+  }
+  .portfolio__list-item {
+    margin-right: 8px;
+  }
+  .portfolio__list-item:last-child {
+    margin-right: 0;
+  }
+  .cards__list {
+    margin: 0;
+    padding: 0;
+    margin-top: -30px;
+    margin-left: -30px;
+    justify-content: center;
+  }
+  .cards__item {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__cards {
+    margin-top: 94px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

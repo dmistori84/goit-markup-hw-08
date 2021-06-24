@@ -1,6 +1,12 @@
-.features__item {
-  width: 100%;
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 60px;
 }
+// .features__item {
+//   width: 100%;
+// }
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }

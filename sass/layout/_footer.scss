@@ -143,6 +143,9 @@ footer {
   }
 }
 @media screen and (min-width: 1200px) {
+  .subscription__title {
+    text-align: left;
+  }
   .subscription__form-footer {
     display: flex;
     flex-direction: row;
