@@ -142,6 +142,21 @@ footer {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscription__form-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .subscription__form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+  }
+}
+
 // .footer-fl {
 //   display: flex;
 //   align-items: baseline;
