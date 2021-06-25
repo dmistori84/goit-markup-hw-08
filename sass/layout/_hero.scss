@@ -27,7 +27,7 @@
   }
 }
 .hero__heading {
-  width: 360px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -55,25 +55,29 @@
   cursor: pointer;
   border-radius: 4px;
 }
-@media screen and (min-width: 768px) {
-  .hero{
-    background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../images/tab-header-img.png");
+@media screen and (min-width: 480px) {
+  width: 360px;
+}
 
-  }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
-        0deg,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/tab-header-img@2x.png");
+      url("../../images/tab-header-img.png");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          0deg,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/tab-header-img@2x.png");
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -92,45 +96,45 @@
     margin: 0 auto;
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        0deg,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../../images/bg@2x.png");
-  }
-  .hero__heading {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--other-color);
-  }
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          0deg,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/bg@2x.png");
+    }
+    .hero__heading {
+      width: 696px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--other-color);
+    }
 
-  .hero__button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 32px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--other-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    border-radius: 4px;
+    .hero__button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 32px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: var(--other-color);
+      background-color: var(--accent-color);
+      cursor: pointer;
+      border-radius: 4px;
+    }
   }
-
 }
