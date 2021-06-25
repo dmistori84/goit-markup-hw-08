@@ -601,7 +601,7 @@ body {
 .hero {
   text-align: center;
   background: var(--bg-hf);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero1.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mob-header-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -609,6 +609,12 @@ body {
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mob-header-img@2x.png");
+  }
 }
 
 .hero__heading {
