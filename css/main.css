@@ -605,7 +605,7 @@ body {
 .hero {
   text-align: center;
   background: var(--bg-hf);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mob-header-img.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob-header-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
