@@ -824,6 +824,13 @@ body {
   padding-top: 60px;
 }
 
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .team__item {
   width: 100%;
   max-width: 450px;
@@ -845,6 +852,12 @@ body {
   padding-right: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team__img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 100%;
 }
 
 .team__name {
