@@ -129,6 +129,9 @@
   letter-spacing: 0.03em;
   color: var(--under-color);
 }
+.cards__img {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .portfolio__list {
     display: flex;
@@ -169,6 +172,7 @@
     // flex-grow: 1;
     min-height: 146px;
   }
+ 
 }
 @media screen and (min-width: 1200px) {
   .portfolio__cards {

@@ -1327,6 +1327,10 @@ footer .logo__second-name {
   color: var(--under-color);
 }
 
+.cards__img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio__list {
     display: flex;
