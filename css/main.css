@@ -448,6 +448,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .h-current {
+    color: var(--accent-color);
+  }
   .nav__list {
     display: none;
   }
@@ -648,10 +651,6 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
-  width: 360px;
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tab-header-img.png");
@@ -681,6 +680,9 @@ body {
   .hero {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg@2x.png");
   }
+}
+
+@media screen and (min-width: 1200px) {
   .hero__heading {
     width: 696px;
     margin-left: auto;
@@ -1158,6 +1160,13 @@ footer .logo__second-name {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
+  }
+  .subscription {
+    width: 100%;
+  }
+  .subscription__form-input {
+    margin: 0 auto;
   }
 }
 
@@ -1167,6 +1176,7 @@ footer .logo__second-name {
   }
   .subscription {
     margin-left: auto;
+    width: 570px;
   }
   .subscription__title {
     text-align: left;
@@ -1196,6 +1206,10 @@ footer .logo__second-name {
   }
   .footer__social-header {
     text-align: left;
+  }
+  .footer-fl {
+    flex-wrap: nowrap;
+    max-width: 1200px;
   }
 }
 
@@ -1323,7 +1337,7 @@ footer .logo__second-name {
   .cards__list {
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: start;
     margin: 0;
     padding: 0;
     margin-top: -30px;

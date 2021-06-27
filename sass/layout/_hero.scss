@@ -55,9 +55,7 @@
   cursor: pointer;
   border-radius: 4px;
 }
-@media screen and (min-width: 480px) {
-  width: 360px;
-}
+
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -106,6 +104,7 @@
         ),
         url("../../images/bg@2x.png");
     }
+  }
     .hero__heading {
       width: 696px;
       margin-left: auto;
@@ -137,4 +136,4 @@
       border-radius: 4px;
     }
   }
-}
+

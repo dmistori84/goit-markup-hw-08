@@ -6,6 +6,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .h-current {
+    
+    color: var(--accent-color);
+
+}
   .nav__list {
     display: none;
   }
@@ -60,6 +65,7 @@
       color: var(--accent-color);
     }
   }
+  
   .current {
     position: relative;
     &::after {
